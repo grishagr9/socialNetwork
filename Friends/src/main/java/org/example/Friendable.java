@@ -24,4 +24,12 @@ public interface Friendable {
      * @return количество друзей
      */
     public Integer countFriends(Person person);
+
+    /**
+     * Проверяет являются ли пользователи друзьями
+     * @param person1 первый пользователь
+     * @param person2 второй пользователь
+     * @return являются ли друзьями пользователи
+     */
+    public Boolean isFriends(Person person1, Person person2);
 }

@@ -12,12 +12,14 @@ class GiftsGivableTest {
 
     @Mock
     GiftsGivable giftsGivable;
-    Person person1 = new Person();
-    Person person2 = new Person();
+    Person person1;
+    Person person2;
 
     @BeforeEach
     void setUp(){
         MockitoAnnotations.openMocks(this);
+        person1 = new Person();
+        person2 = new Person();
     }
 
     @org.junit.jupiter.api.Test
